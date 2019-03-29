@@ -1,0 +1,10 @@
+/* Put your css in here */
+
+.problem {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+

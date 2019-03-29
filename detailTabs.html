@@ -1,0 +1,7 @@
+<tabset class="tab-container" type="{{::type}}" vertical="{{::vertical}}" justified="{{::justified}}">
+    <tab class="tab" ng-repeat="tab in ::tabs" active="tab.active" ng-click="go(tab)">
+        <tab-heading>
+            {{::tab.heading}} <span ng-if="::tab.warningCount" class="problem">{{::tab.warningCount}}</span>
+        </tab-heading>
+    </tab>
+</tabset>
