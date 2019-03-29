@@ -4,7 +4,7 @@ var app = angular.module('plunker', [
   'ui.router.tabs',
   ])
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/");//默认地址
     
     $stateProvider
       .state('main', {
@@ -31,6 +31,8 @@ var app = angular.module('plunker', [
       })
   }]);
 
+//定义控制器
 app.controller('MainCtrl', function($scope) {
-  $scope.name = 'World';
+     $scope.name = 'World';
+		 console.log($scope);
 });

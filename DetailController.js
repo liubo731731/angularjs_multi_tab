@@ -10,8 +10,7 @@ angular.module('plunker')
 			},
 			{
 				heading: 'Tab 2',
-				route:   'main.tab2',
-				warningCount: 2
+				route:   'main.tab2'
 			},
 			{
 				heading: 'Tab 3',
@@ -19,7 +18,7 @@ angular.module('plunker')
 			}
 		];
 		
-		$rootScope.$on('$stateChangeStart', function (event, to, toParams, from, fromParams) {
+	$rootScope.$on('$stateChangeStart', function (event, to, toParams, from, fromParams) {
       console.log('Going to: ' + to.name);
       if (to.name.indexOf('tab3') > -1) {
         event.preventDefault();
